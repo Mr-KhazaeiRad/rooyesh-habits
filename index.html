@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#21183e">
+  <meta name="description" content="رویش؛ عادت‌های کوچک را پیگیری کن، به خودت افتخار کن و هر روز یک قدم جلوتر برو.">
+  <title>رویش — هر روز یک قدم جلوتر</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20.8 3.2C12.4 2.7 5.1 4.3 4 10.2c-.8 4.2 3.3 6.5 6.5 4.6 4.4-2.7 6.8-8.2 10.3-11.6Z"/><path d="M3.2 21c1.9-5.4 5.6-8.6 10.4-11.2"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></symbol>
+    <symbol id="i-checklist" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><path d="m3 6 1.5 1.5L7 5m-4 7 1.5 1.5L7 11m-4 7 1.5 1.5L7 17"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 19V5m0 14h17"/><path d="m7 15 4-4 3 2 6-7"/><path d="M16 6h4v4"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-checkmark" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 22a8 8 0 0 0 8-8c0-5-5-7-4-12-4 2-6 6-6 9-2-1-3-3-3-5-3 3-4 5-4 8a9 9 0 0 0 9 8Z"/><path d="M12 22c-2 0-3.5-1.5-3.5-3.5 0-1.5 1-2.5 2.5-4 .2 1.3 1 2 2 2.5.6-1.4.6-2.4.4-3.5 2 1.5 3.6 3.1 3.6 5A4.5 4.5 0 0 1 12 22Z"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2Z"/></symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24"><path d="m14 5 5 5M4 20l4.2-.8L20 7.4 16.6 4 4.8 15.8 4 20Z"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M10 11v6m4-6v6M6 7l1 14h10l1-14M9 7V4h6v3"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M16 3v4M8 3v4M3 10h18"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 8.8c0 5.2-8.8 11-8.8 11s-8.8-5.8-8.8-11A4.8 4.8 0 0 1 12 6a4.8 4.8 0 0 1 8.8 2.8Z"/></symbol>
+  </svg>
+
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="app-shell">
+    <div class="layout">
+      <aside class="sidebar" aria-label="ناوبری اصلی">
+        <a class="brand" href="#top" aria-label="رویش، صفحه اصلی">
+          <span class="brand-mark"><svg class="icon"><use href="#i-leaf"/></svg></span>
+          <span class="brand-word">رویش<span>.</span><small>هر روز یک قدم جلوتر</small></span>
+        </a>
+
+        <div class="nav-caption">فضای تو</div>
+        <nav class="side-nav">
+          <a class="nav-link active" href="#top"><svg class="icon"><use href="#i-grid"/></svg><span>نمای کلی</span><span class="nav-active-dot"></span></a>
+          <a class="nav-link" href="#habits-section"><svg class="icon"><use href="#i-checklist"/></svg><span>عادت‌های من</span></a>
+          <a class="nav-link" href="#progress-section"><svg class="icon"><use href="#i-chart"/></svg><span>روند پیشرفت</span></a>
+        </nav>
+
+        <div class="sidebar-quote">
+          <div class="quote-spark"><svg class="icon"><use href="#i-spark"/></svg></div>
+          <p>قرار نیست هر روز عالی باشی؛ فقط کافیه <strong>ادامه بدی.</strong></p>
+          <span>یادآوری کوچک امروز</span>
+        </div>
+
+        <div class="sidebar-bottom">
+          <div class="user-avatar" aria-hidden="true">ر</div>
+          <div class="user-copy"><strong>رفیقِ رویش</strong><span>قدم‌به‌قدم بهتر</span></div>
+          <span class="user-leaf" aria-hidden="true"><svg class="icon"><use href="#i-leaf"/></svg></span>
+        </div>
+          <div class="sidebar-footer">پیشرفت، نه کمال‌گرایی</div>
+      </aside>
+
+      <main class="main-content" id="top">
+        <header class="topbar">
+          <div class="mobile-brand"><span class="brand-mark"><svg class="icon"><use href="#i-leaf"/></svg></span><strong>رویش<span>.</span></strong></div>
+          <div class="breadcrumb"><span>فضای شخصی</span><b>/</b><strong>نمای کلی</strong></div>
+          <div class="topbar-meta"><span class="today-dot"></span><span id="top-date">امروز</span><span class="topbar-divider"></span><span class="topbar-note">یک روز در یک زمان</span></div>
+        </header>
+
+        <section class="welcome-row" aria-labelledby="welcome-title">
+          <div class="welcome-copy">
+            <span class="eyebrow"><span class="eyebrow-star" aria-hidden="true"></span> فضای شخصی تو</span>
+            <h1 id="welcome-title">سلام، <span>به مسیرت ادامه بده.</span></h1>
+            <p>پیشرفت از قدم‌های کوچک و تکرارهای پیوسته ساخته می‌شود.</p>
+          </div>
+          <div class="date-pill"><span class="date-icon"><svg class="icon"><use href="#i-calendar"/></svg></span><span id="welcome-date">امروز</span></div>
+        </section>
+
+        <section class="hero-card" aria-label="خلاصه پیشرفت روزانه">
+          <div class="hero-pattern" aria-hidden="true"></div>
+          <div class="hero-orb orb-one" aria-hidden="true"></div>
+          <div class="hero-orb orb-two" aria-hidden="true"></div>
+          <div class="hero-content">
+            <div class="hero-label"><span class="hero-label-dot"></span><span id="hero-date-label">ماموریت امروز</span></div>
+            <h2 id="hero-message">روی چیزی که مهم است تمرکز کن.</h2>
+            <p id="hero-submessage">هر عادت کوچک، بخشی از مسیری است که برای خودت می‌سازی.</p>
+            <button class="hero-cta" id="hero-add" type="button"><svg class="icon"><use href="#i-plus"/></svg> عادت تازه بساز</button>
+          </div>
+          <div class="hero-progress">
+            <div class="ring-wrap">
+              <svg class="progress-ring" viewBox="0 0 120 120" aria-hidden="true">
+                <circle class="ring-track" cx="60" cy="60" r="49"/>
+                <circle class="ring-value" id="progress-ring" cx="60" cy="60" r="49"/>
+              </svg>
+              <div class="ring-center"><strong id="today-percent">۰٪</strong><span>تکمیل</span></div>
+            </div>
+            <div class="hero-count"><strong><span id="daily-done">۰</span><i>/</i><span id="daily-total">۰</span></strong><span id="daily-count-label">عادت انجام‌شده</span></div>
+          </div>
+          <div class="hero-bottom-note"><span class="hero-note-symbol" aria-hidden="true"></span><span id="progress-caption">پیوستگی از شدت مهم‌تر است.</span><span class="hero-note-line"></span></div>
+        </section>
+
+        <section class="stats-row" aria-label="آمار کلی">
+          <article class="stat-card streak-stat">
+            <div class="stat-icon streak-icon"><svg class="icon"><use href="#i-flame"/></svg></div>
+            <div class="stat-copy"><span class="stat-label">تداوم</span><strong><span id="streak-count">۰</span><small>روز پیاپی</small></strong><span class="stat-hint">روزهایی که حداقل یک عادت انجام شد</span></div>
+          </article>
+          <article class="stat-card week-stat">
+            <div class="stat-icon week-icon"><svg class="icon"><use href="#i-chart"/></svg></div>
+            <div class="stat-copy"><span class="stat-label">پیشرفت این هفته</span><strong><span id="week-rate">۰٪</span></strong><span class="stat-hint" id="week-summary">در هفت روز گذشته</span></div>
+            <div class="mini-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </article>
+          <article class="stat-card total-stat">
+            <div class="stat-icon total-icon"><svg class="icon"><use href="#i-spark"/></svg></div>
+            <div class="stat-copy"><span class="stat-label">عادت‌های فعال</span><strong><span id="active-count">۰</span><small>عادت</small></strong><span class="stat-hint">تعهدهای روزانه‌ی تو</span></div>
+            <div class="total-badge" aria-hidden="true">✦</div>
+          </article>
+        </section>
+
+        <div class="dashboard-grid">
+          <section class="habits-panel panel" id="habits-section" aria-labelledby="habits-title">
+            <div class="panel-heading habits-heading">
+              <div><span class="section-kicker">برنامه‌ی روزانه</span><h2 id="habits-title">عادت‌های <span id="selected-day-word">امروز</span></h2><p id="habits-subtitle">عادت‌های کوچک، پیشرفت ماندگار می‌سازند.</p></div>
+              <button class="add-button" id="add-habit" type="button"><svg class="icon"><use href="#i-plus"/></svg><span>عادت جدید</span></button>
+            </div>
+            <div class="habit-toolbar">
+              <div class="filter-tabs" role="group" aria-label="فیلتر عادت‌ها">
+                <button class="filter-tab active" type="button" data-filter="all" aria-pressed="true">همه <span id="filter-all-count">۰</span></button>
+                <button class="filter-tab" type="button" data-filter="pending" aria-pressed="false">باقی‌مانده</button>
+                <button class="filter-tab" type="button" data-filter="done" aria-pressed="false">انجام‌شده</button>
+              </div>
+              <span class="selected-date" id="selected-date-label">امروز</span>
+            </div>
+            <div class="habit-list" id="habit-list" aria-live="polite"></div>
+            <div class="empty-state" id="empty-state" hidden>
+              <div class="empty-illustration" aria-hidden="true"><svg class="icon"><use href="#i-leaf"/></svg></div>
+              <h3 id="empty-title">هنوز عادتی اینجا نیست</h3>
+              <p id="empty-copy">یک عادت کوچک برای شروع انتخاب کن.</p>
+              <button class="empty-add" id="empty-add" type="button"><svg class="icon"><use href="#i-plus"/></svg> ساختن اولین عادت</button>
+            </div>
+            <div class="habits-footer"><span class="footer-heart"><svg class="icon"><use href="#i-heart"/></svg></span><span>به یاد داشته باش: پیوستگی از شدت مهم‌تره.</span><span class="footer-spark">✦</span></div>
+          </section>
+
+          <aside class="insights-column">
+            <section class="progress-panel panel" id="progress-section" aria-labelledby="progress-title">
+              <div class="panel-heading compact-heading"><div><span class="section-kicker">مسیر رو به رشد</span><h2 id="progress-title">ریتم این هفته</h2></div><span class="week-badge">۷ روز</span></div>
+              <p class="chart-description">هر تیک، یک قدم نزدیک‌تر به هدفته.</p>
+              <div class="week-chart" id="week-chart" role="group" aria-label="پیشرفت روزانه در هفت روز گذشته"></div>
+              <div class="chart-legend"><span><i class="legend-dot"></i> عادت‌های تکمیل‌شده</span><span id="chart-total-label">۰ از ۰</span></div>
+              <div class="chart-bottom-line"><span class="chart-bottom-icon" aria-hidden="true"><svg class="icon"><use href="#i-chart"/></svg></span><span>پیشرفت روزانه را با نگاه هفتگی دنبال کن.</span></div>
+            </section>
+
+            <section class="encouragement-card" aria-label="پیام انگیزشی">
+              <div class="encouragement-top"><span class="encouragement-icon" aria-hidden="true"><svg class="icon"><use href="#i-spark"/></svg></span><span class="encouragement-label">یادآوری</span></div>
+              <blockquote id="quote-text">«پیشرفت، نتیجه‌ی کارهای کوچکی است که هر روز تکرار می‌کنی.»</blockquote>
+              <div class="quote-author"><span class="quote-author-line"></span><span>برای ادامه‌ی مسیر</span></div>
+              <div class="encouragement-decoration" aria-hidden="true">“</div>
+            </section>
+
+            <div class="gentle-reminder"><span class="reminder-icon" aria-hidden="true"><svg class="icon"><use href="#i-heart"/></svg></span><p>اگر امروز طبق برنامه پیش نرفت، فردا فرصت تازه‌ای است. <strong>با خودت مهربان باش.</strong></p></div>
+          </aside>
+        </div>
+
+        <footer class="page-footer"><span>ساخته‌شده با عشق توسط <strong>محمد خزائی راد</strong></span><span>اطلاعات فقط روی همین دستگاه ذخیره می‌شود.</span></footer>
+      </main>
+    </div>
+  </div>
+
+  <dialog class="habit-modal" id="habit-modal" aria-labelledby="modal-title">
+    <form id="habit-form" method="dialog">
+      <div class="modal-topline"><span class="modal-mark"><svg class="icon"><use href="#i-leaf"/></svg></span><button class="modal-close" id="modal-close" type="button" aria-label="بستن پنجره"><svg class="icon"><use href="#i-close"/></svg></button></div>
+      <span class="section-kicker">یه قدم تازه</span>
+      <h2 id="modal-title">عادت جدیدت رو بساز</h2>
+      <p class="modal-description">قرار نیست بزرگ باشه؛ فقط قراره مالِ تو باشه.</p>
+      <label class="field-label" for="habit-name">اسم عادت <span>*</span></label>
+      <input class="text-input" id="habit-name" name="name" type="text" maxlength="42" placeholder="مثلاً: ۱۰ دقیقه کتاب‌خوانی" required autocomplete="off">
+      <label class="field-label" for="habit-category">دسته‌بندی</label>
+      <select class="text-input select-input" id="habit-category" name="category">
+        <option value="سلامتی">سلامتی</option>
+        <option value="یادگیری">یادگیری</option>
+        <option value="آرامش">آرامش</option>
+        <option value="رشد فردی">رشد فردی</option>
+        <option value="سبک زندگی">سبک زندگی</option>
+      </select>
+      <label class="field-label">یه نشونه براش انتخاب کن</label>
+      <div class="emoji-picker" id="emoji-picker" role="group" aria-label="انتخاب شکلک">
+        <button type="button" class="emoji-option selected" data-emoji="🌱" aria-label="جوانه" aria-pressed="true">🌱</button>
+        <button type="button" class="emoji-option" data-emoji="📚" aria-label="کتاب" aria-pressed="false">📚</button>
+        <button type="button" class="emoji-option" data-emoji="🏃" aria-label="دویدن" aria-pressed="false">🏃</button>
+        <button type="button" class="emoji-option" data-emoji="💧" aria-label="آب" aria-pressed="false">💧</button>
+        <button type="button" class="emoji-option" data-emoji="🧘" aria-label="مدیتیشن" aria-pressed="false">🧘</button>
+        <button type="button" class="emoji-option" data-emoji="✍️" aria-label="نوشتن" aria-pressed="false">✍️</button>
+        <button type="button" class="emoji-option" data-emoji="🎯" aria-label="هدف" aria-pressed="false">🎯</button>
+      </div>
+      <label class="field-label" for="habit-note">یادداشت کوچیک <span class="optional-label">اختیاری</span></label>
+      <input class="text-input" id="habit-note" name="note" type="text" maxlength="72" placeholder="چرا این عادت برات مهمه؟">
+      <div class="modal-actions"><button class="save-button" id="save-habit" type="submit"><svg class="icon"><use href="#i-checkmark"/></svg><span>ذخیره‌ی عادت</span></button><button class="cancel-button" id="cancel-modal" type="button">بی‌خیال</button></div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><span class="toast-icon">✨</span><span id="toast-message">عالی بود!</span></div>
+  <div class="celebration" id="celebration" aria-hidden="true"></div>
+</body>
+</html>
